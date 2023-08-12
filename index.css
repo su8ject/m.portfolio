@@ -11,24 +11,29 @@ ul {
 }
 
 .winter {
-    background: url("winter.gif");
+    background-image: url("winter.gif");
 }
 
 .summer {
-    background: url("summer.gif");
+    background-image: url("summer.gif");
+    background-color: #8495e7;
 }
 
 .autumn {
-    background: url("autumn.gif");
+    background-image: url("autumn.gif");
+    background-color: #d3beab;
 }
 
 .spring {
-    background: url("spring.gif");
+    background-image: url("spring.gif");
 }
 
 .winter,
 .autumn,
 .summer,
 .spring {
+    min-width: 100vw;
+    min-height: 100vh;
     background-size: cover;
+    background-repeat: no-repeat;
 }
