@@ -4,6 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 ul {
@@ -11,24 +16,54 @@ ul {
 }
 
 .winter {
-    background: url("winter.gif");
+    background-image: url("winter.gif");
 }
 
 .summer {
-    background: url("summer.gif");
+    background-image: url("summer.gif");
+    background-color: #8495e7;
 }
 
 .autumn {
-    background: url("autumn.gif");
+    background-image: url("autumn.gif");
+    background-color: #d3beab;
 }
 
 .spring {
-    background: url("spring.gif");
+    background-image: url("spring.gif");
 }
 
 .winter,
 .autumn,
 .summer,
 .spring {
+    min-width: 100vw;
+    min-height: 100vh;
     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    justify-content: space-around;
+}
+
+.link {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.summer a {
+    color: #ffffff;
 }
